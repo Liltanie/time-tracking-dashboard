@@ -139,6 +139,7 @@ p {
 			color: hsl(236, 100%, 87%);
 			opacity: 0.75;
 			mix-blend-mode: hard-light;
+			cursor: pointer;
 		}
 		.active {
 			color: #fff;
@@ -213,6 +214,7 @@ p {
 	&__previous-time {
 		font-weight: 300;
 		color: hsl(236, 100%, 87%);
+		justify-self: end;
 	}
 
 	@include for-phone-only() {
