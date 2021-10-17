@@ -22,8 +22,8 @@ fetch('https://raw.githubusercontent.com/Liltanie/time-tracking-dashboard/master
 	.then(res => res.json())
 	.then(data => {
 		timeFrames.addEventListener('click', e => {
-			if (e.target.localName == 'li') {
-				;[...timeFrames.querySelectorAll('li')].forEach(e => e.classList.remove('active'))
+			if (e.target.localName == 'a') {
+				;[...timeFrames.querySelectorAll('a')].forEach(e => e.classList.remove('active'))
 				e.target.classList.add('active')
 				showStats(data, e.target.classList[0])
 			}
