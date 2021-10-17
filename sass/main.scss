@@ -149,6 +149,7 @@ a {
 		a:hover,
 		a:focus {
 			color: #fff;
+			transition: 100ms ease-in-out;
 			opacity: 1;
 		}
 		a:focus {
@@ -201,6 +202,7 @@ a {
 	&:hover,
 	&:focus {
 		background-color: hsl(235, 40%, 40%);
+		transition: 175ms ease-in-out;
 	}
 
 	&:focus {
