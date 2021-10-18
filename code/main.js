@@ -2,7 +2,6 @@
 
 const cards = [...document.querySelectorAll('.card')]
 const timeFrames = document.querySelector('.profile__selection')
-//usar template
 
 const showStats = (data, timeFrame) => {
 	let context
@@ -28,6 +27,8 @@ fetch('https://raw.githubusercontent.com/Liltanie/time-tracking-dashboard/master
 				showStats(data, e.target.classList[0])
 			}
 		})
+
+		// default stats to show
 		showStats(data, 'weekly')
 	})
 	.catch(e => console.log(e))
